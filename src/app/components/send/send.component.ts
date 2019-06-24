@@ -64,7 +64,7 @@ export class SendComponent implements OnInit {
   }, {validators: this.memoValidator});
 
   assetControl = new FormControl('MONA', [Validators.required]);
-  feeControl = new FormControl(11, [Validators.required, Validators.min(0)]);
+  feeControl = new FormControl(11, [Validators.required, Validators.min(1)]);
 
   sendForm = new FormGroup({
     from: this.fromControl,
